@@ -1,0 +1,9 @@
+
+            List<object> objList = new List<object>();
+            List<object> list = new List<object>();
+            list.Add((int)EBS.BLL.EnumBLL.PushTaskType.推送);
+            string sqlWhere = "IsDel=0 and TaskType=@TaskType and PushUserType & @PushUserType >0";
+            string sqlWhere1 = "IsDel=0 and PushType=@PushType and PushUserType & @PushUserType >0";
+            string sqlWhere2 = "";
+            string sqlWhere3 = "";
+            objList.Add((int)EBS.BLL.EnumBLL.PushTaskType.推送);
